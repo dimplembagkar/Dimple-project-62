@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Photo Gallery</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <center>
+        <ul class="menu1">
+            <li class="links"><a href="#Home">Home</a></li>
+            <li class="links"><a href="#Grids">Grid view</a></li>
+            <li class="links"><a href="#Slide">Slide view</a></li>
+        </ul>
+    </center>
+    <section id="Home">
+        <img src="flowers.gif">
+    </section>
+    <section id="Grids">
+        <h2>Grid gallery</h2>
+        <br>
+        <div class="row">
+            <img class="img2" src="blue.jpg">
+            <img class="img2" src="Orange.png">
+            <img class="img2" src="Pink%20tulip.jpg">
+            <img class="img2" src="purple.jpg">
+            <br><br>
+        </div>
+    </section>
+    <section id="Slide">
+        <h2>Sliding gallery</h2>
+        <div class="item">
+            <center>
+                <img src="Pink%20tulip.jpg" class="img-responsive" style="width: 100%">
+                <h3>Pink Tulip</h3>
+                <img src="purple.jpg" class="img-responsive"><h3>Purple Lily</h3>
+                <img src="White.jpg" class="img-responsive">
+                <h3>gardenia jasminoides (anant)</h3>
+                <img src="yellow.jpg" class="img-responsive">
+                <h3>Sunflower</h3>
+                <img src="violet.jpg" class="img-responsive">
+            </center>
+        </div>
+        <div id="mycarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                        <img class="img responsive" src="Red%20rose.jpg" alt="Red" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Red Rose</h3>
+                            <p></p>
+                        </div>
+
+                    </center>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#mycarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#mycarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+        </div>
+    </section>
+</body>
+
+</html>
